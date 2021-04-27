@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/my_frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- VUE CONTAINER -->
+    <div id="root">
+        <!-- HEADER -->
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <h1 class="test text-center">Mailing list</h1>
+        <ul v-if="mailArr.length == 10">
+            <li v-for="(item, index) in mailArr">
+                <span>{{ item }}</span>
+            </li>
+        </ul>
+        <div class="flexer center center-cross" v-else>
+            Loading...
+        </div>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <!-- END FOOTER -->
+    </div>
+    <!-- END VUE CONTAINER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
